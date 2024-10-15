@@ -1,0 +1,662 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="default_list_view_fo_388f1b57-2a3d-446f-8921-df4721aa2bd9" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list>
+        <field name="x_studio_sequence" widget="handle"/>
+        <field name="x_name"/>
+      </list>
+    </field>
+    <field name="model">x_professional_categor</field>
+    <field name="name">Default list view for x_professional_categor</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_4cdf9933-21df-42c0-8868-ca7e9412d380" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="Professional Category">
+          <widget name="web_ribbon" text="Archived" bg_color="text-bg-danger" invisible="x_active"/>
+          <field name="x_active" invisible="1"/>
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_3074b0">
+            <group name="studio_group_3074b0_left"/>
+            <group name="studio_group_3074b0_right"/>
+          </group>
+          <notebook>
+            <page string="Details" name="lines">
+              <field name="x_professional_categor_line_ids_bb29d"/>
+            </page>
+          </notebook>
+        </sheet>
+        <chatter/>
+      </form>
+    </field>
+    <field name="model">x_professional_categor</field>
+    <field name="name">Default form view for x_professional_categor</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__f8ef391e-e83e-40f4-846f-33e20333e6f1" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+        <separator/>
+        <filter string="Archived" name="archived_x_professional_categor" domain="[['x_active', '=', False]]"/>
+        <separator/>
+      </search>
+    </field>
+    <field name="model">x_professional_categor</field>
+    <field name="name">Default search view for x_professional_categor</field>
+    <field name="type">search</field>
+  </record>
+  <record id="default_list_view_fo_6428136b-6c6f-4526-bf2d-54213d48fea1" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list editable="bottom">
+        <field name="x_studio_sequence" widget="handle"/>
+        <field name="x_name"/>
+      </list>
+    </field>
+    <field name="model">x_professional_categor_line_c835d</field>
+    <field name="name">Default list view for x_professional_categor_line_c835d</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_090ba7c7-efb1-4fc5-82c2-7349addeed37" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="professional_categor_line">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_21edfa">
+            <group name="studio_group_21edfa_left"/>
+            <group name="studio_group_21edfa_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="model">x_professional_categor_line_c835d</field>
+    <field name="name">Default form view for x_professional_categor_line_c835d</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__228ce6dc-5e83-4c8d-bcf2-1dfa80e6833d" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+      </search>
+    </field>
+    <field name="model">x_professional_categor_line_c835d</field>
+    <field name="name">Default search view for x_professional_categor_line_c835d</field>
+    <field name="type">search</field>
+  </record>
+  <record id="odoo_studio_default__047e8b8a-f463-4f74-b024-2674b8706044" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_studio_sequence']" position="before">
+          <field optional="show" name="x_studio_code"/>
+          <xpath expr="//field[@name='x_name']" position="move"/>
+          <field optional="show" name="x_studio_text_field_1ek_1ia0b6l94" string="Description"/>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="attributes">
+          <attribute name="optional">show</attribute>
+          <attribute name="string">Name</attribute>
+        </xpath>
+      </data>
+    </field>
+    <field name="inherit_id" ref="default_list_view_fo_388f1b57-2a3d-446f-8921-df4721aa2bd9"/>
+    <field name="mode">extension</field>
+    <field name="model">x_professional_categor</field>
+    <field name="name">Odoo Studio: Default list view for x_professional_categor customization</field>
+    <field name="priority">99</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_list_view_fo_d99389c3-f871-4f83-a7ac-fc9d97f0850e" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list>
+        <field name="x_studio_sequence" widget="handle"/>
+        <field name="x_name"/>
+      </list>
+    </field>
+    <field name="model">x_discipline</field>
+    <field name="name">Default list view for x_discipline</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_cb35ec0c-ef3d-481c-a15b-82e9a9086131" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="Discipline">
+          <widget name="web_ribbon" text="Archived" bg_color="text-bg-danger" invisible="x_active"/>
+          <field name="x_active" invisible="1"/>
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_7d3b82">
+            <group name="studio_group_7d3b82_left"/>
+            <group name="studio_group_7d3b82_right"/>
+          </group>
+        </sheet>
+        <chatter/>
+      </form>
+    </field>
+    <field name="model">x_discipline</field>
+    <field name="name">Default form view for x_discipline</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__fedbfe5f-e916-4890-8b73-3c6cc73a7b26" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+        <separator/>
+        <filter string="Archived" name="archived_x_discipline" domain="[['x_active', '=', False]]"/>
+        <separator/>
+      </search>
+    </field>
+    <field name="model">x_discipline</field>
+    <field name="name">Default search view for x_discipline</field>
+    <field name="type">search</field>
+  </record>
+  <record id="odoo_studio_default__238971b5-a06e-46a3-a930-087d9c41cbd3" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_studio_sequence']" position="after">
+          <field optional="show" name="x_studio_discipline_code" required="True"/>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="attributes">
+          <attribute name="required">True</attribute>
+          <attribute name="string">Name</attribute>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field optional="show" name="x_studio_description"/>
+        </xpath>
+      </data>
+    </field>
+    <field name="inherit_id" ref="default_list_view_fo_d99389c3-f871-4f83-a7ac-fc9d97f0850e"/>
+    <field name="mode">extension</field>
+    <field name="model">x_discipline</field>
+    <field name="name">Odoo Studio: Default list view for x_discipline customization</field>
+    <field name="priority">99</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_list_view_fo_ebe1f7ea-d0aa-4488-9271-4976db33b779" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list>
+        <field name="x_name"/>
+        <field name="x_studio_partner_id"/>
+        <field name="x_studio_user_id" widget="many2one_avatar_user"/>
+        <field name="x_studio_currency_id" invisible="1"/>
+        <field name="x_studio_value" sum="Total"/>
+        <field name="x_studio_tag_ids" widget="many2many_tags" options="{'color_field': 'x_color'}"/>
+        <field name="x_color" widget="color_picker"/>
+      </list>
+    </field>
+    <field name="model">x_proposal</field>
+    <field name="name">Default list view for x_proposal</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_c8bb0797-259e-4ad6-823d-7b82824c7a56" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header>
+          <field name="x_studio_stage_id" widget="statusbar" options="{'clickable': '1'}"/>
+        </header>
+        <sheet string="Proposal">
+          <field name="x_studio_kanban_state" widget="state_selection"/>
+          <widget name="web_ribbon" text="Archived" bg_color="text-bg-danger" invisible="x_active"/>
+          <field name="x_active" invisible="1"/>
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_3574fa">
+            <group name="studio_group_3574fa_left">
+              <field name="x_studio_partner_id"/>
+              <field name="x_studio_partner_phone" widget="phone" options="{'enable_sms': True}"/>
+              <field name="x_studio_partner_email" widget="email"/>
+              <field name="x_studio_date"/>
+              <field name="x_studio_date_start" string="Dates" widget="daterange" options="{'end_date_field': 'x_studio_date_stop'}"/>
+              <field name="x_studio_date_stop" invisible="1"/>
+            </group>
+            <group name="studio_group_3574fa_right">
+              <field name="x_studio_user_id" widget="many2one_avatar_user"/>
+              <field name="x_studio_currency_id" invisible="1"/>
+              <field name="x_studio_value"/>
+              <field name="x_studio_tag_ids" widget="many2many_tags" options="{'color_field': 'x_color'}"/>
+            </group>
+          </group>
+          <group>
+            <field name="x_studio_notes" placeholder="Type down your notes here..." nolabel="1" colspan="2"/>
+          </group>
+          <notebook>
+            <page string="Details" name="lines">
+              <field name="x_proposal_line_ids_baf3b"/>
+            </page>
+          </notebook>
+        </sheet>
+        <chatter/>
+      </form>
+    </field>
+    <field name="model">x_proposal</field>
+    <field name="name">Default form view for x_proposal</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__b2e88bf4-76ea-48d2-8178-8f4297941290" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+        <field name="x_studio_partner_id" operator="child_of"/>
+        <field name="x_studio_user_id"/>
+        <field name="x_studio_tag_ids"/>
+        <filter string="My Proposal" name="my_x_proposal" domain="[['x_studio_user_id', '=', uid]]"/>
+        <separator/>
+        <filter date="x_studio_date" name="studio_filter_date" string="Date"/>
+        <filter date="x_studio_date_start" name="studio_filter_date_start" string="Start Date"/>
+        <filter date="x_studio_date_stop" name="studio_filter_date_stop" string="End Date"/>
+        <separator/>
+        <filter string="Archived" name="archived_x_proposal" domain="[['x_active', '=', False]]"/>
+        <separator/>
+        <filter name="groupby_x_partner" string="Partner" context="{'group_by': 'x_studio_partner_id'}" domain="[]"/>
+        <filter name="groupby_x_user" string="Responsible" context="{'group_by': 'x_studio_user_id'}" domain="[]"/>
+        <filter name="x_studio_stage_id" string="Stage" context="{'group_by': 'x_studio_stage_id'}" domain="[]"/>
+      </search>
+    </field>
+    <field name="model">x_proposal</field>
+    <field name="name">Default search view for x_proposal</field>
+    <field name="type">search</field>
+  </record>
+  <record id="default_calendar_vie_07d23426-0792-433c-aeac-3c5e14a3ffe5" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <calendar date_start="x_studio_date" create_name_field="x_name"/>
+    </field>
+    <field name="model">x_proposal</field>
+    <field name="name">Default calendar view for x_proposal</field>
+    <field name="type">calendar</field>
+  </record>
+  <record id="default_gantt_view_f_fdcd67cd-e370-439f-85e3-021ce57dd9b9" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <gantt date_start="x_studio_date_start" date_stop="x_studio_date_stop"/>
+    </field>
+    <field name="model">x_proposal</field>
+    <field name="name">Default gantt view for x_proposal</field>
+    <field name="type">gantt</field>
+  </record>
+  <record id="default_kanban_view__22e41efe-2bcd-4d03-8cba-30d846a0ef0c" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <kanban default_group_by="x_studio_stage_id" default_order="x_studio_priority desc, x_studio_sequence asc, id desc" highlight_color="x_color">
+        <field name="x_color"/>
+        <field name="x_studio_currency_id"/>
+        <progressbar field="x_studio_kanban_state" colors="{&quot;normal&quot;: &quot;200&quot;, &quot;done&quot;: &quot;success&quot;, &quot;blocked&quot;: &quot;danger&quot;}" sum_field="x_studio_value"/>
+        <templates>
+          <t t-name="menu">
+            <a t-if="widget.editable" role="menuitem" type="open" class="dropdown-item">Edit</a>
+            <a t-if="widget.deletable" role="menuitem" type="delete" class="dropdown-item">Delete</a>
+            <field widget="kanban_color_picker" name="x_color"/>
+          </t>
+          <t t-name="card" class="flex-row">
+            <main>
+              <div name="studio_auto_kanban_header" class="d-flex">
+                <field name="x_studio_priority" widget="boolean_favorite" nolabel="1"/>
+                <field name="display_name" class="h5"/>
+              </div>
+              <div name="studio_auto_kanban_body">
+                <field name="x_studio_tag_ids" options="{'color_field': 'x_color'}"/>
+              </div>
+              <footer>
+                <field name="x_studio_value"/>
+                <div class="ms-auto d-flex align-items-center">
+                  <field name="x_studio_kanban_state" widget="state_selection"/>
+                  <field class="ms-1" name="x_studio_user_id" widget="kanban.many2one_avatar_user"/>
+                </div>
+              </footer>
+            </main>
+          </t>
+        </templates>
+      </kanban>
+    </field>
+    <field name="model">x_proposal</field>
+    <field name="name">Default kanban view for x_proposal</field>
+    <field name="type">kanban</field>
+  </record>
+  <record id="default_map_view_for_be4779b9-7af7-4da9-aaf8-63a53673a574" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <map res_partner="x_studio_partner_id">
+        <field name="x_studio_partner_id" string="Partner"/>
+      </map>
+    </field>
+    <field name="model">x_proposal</field>
+    <field name="name">Default map view for x_proposal</field>
+    <field name="type">map</field>
+  </record>
+  <record id="default_pivot_view_f_cdb98137-0904-4d88-9eb0-68a7d4eee7ae" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <pivot sample="1">
+        <field name="x_studio_value" type="measure"/>
+        <field name="x_studio_stage_id" type="col"/>
+        <field name="x_studio_date" type="row"/>
+      </pivot>
+    </field>
+    <field name="model">x_proposal</field>
+    <field name="name">Default pivot view for x_proposal</field>
+    <field name="type">pivot</field>
+  </record>
+  <record id="default_graph_view_f_0bfc14dc-538e-4ac9-ac4b-93d726d06fff" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <graph sample="1">
+        <field name="x_studio_value" type="measure"/>
+        <field name="create_date" type="row"/>
+      </graph>
+    </field>
+    <field name="model">x_proposal</field>
+    <field name="name">Default graph view for x_proposal</field>
+    <field name="type">graph</field>
+  </record>
+  <record id="default_list_view_fo_56c21f2d-ff58-496e-816f-680d7107b884" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list editable="bottom">
+        <field name="x_studio_sequence" widget="handle"/>
+        <field name="x_name"/>
+      </list>
+    </field>
+    <field name="model">x_proposal_line_555c2</field>
+    <field name="name">Default list view for x_proposal_line_555c2</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_696710a3-4518-4d26-af72-47df3cb9072a" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="proposal_line">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_0ab9a6">
+            <group name="studio_group_0ab9a6_left"/>
+            <group name="studio_group_0ab9a6_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="model">x_proposal_line_555c2</field>
+    <field name="name">Default form view for x_proposal_line_555c2</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__9d8c5568-a0c0-48d6-a49d-88d5b1ed231a" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+      </search>
+    </field>
+    <field name="model">x_proposal_line_555c2</field>
+    <field name="name">Default search view for x_proposal_line_555c2</field>
+    <field name="type">search</field>
+  </record>
+  <record id="default_list_view_fo_33a136e2-af97-4543-8f12-38e416e17d2b" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list editable="bottom">
+        <field name="x_studio_sequence" widget="handle"/>
+        <field name="x_name"/>
+      </list>
+    </field>
+    <field name="model">x_proposal_stage</field>
+    <field name="name">Default list view for x_proposal_stage</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_65f09537-1f1e-4492-a9cf-16c829f46f25" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="Proposal Stages">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_c9db45">
+            <group name="studio_group_c9db45_left"/>
+            <group name="studio_group_c9db45_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="model">x_proposal_stage</field>
+    <field name="name">Default form view for x_proposal_stage</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__64ee0801-b177-4265-86bc-ab45253d3711" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+      </search>
+    </field>
+    <field name="model">x_proposal_stage</field>
+    <field name="name">Default search view for x_proposal_stage</field>
+    <field name="type">search</field>
+  </record>
+  <record id="default_list_view_fo_e6e8c88d-6a11-4f0d-b456-4d66f6958996" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list editable="bottom">
+        <field name="x_name"/>
+        <field name="x_color" widget="color_picker"/>
+      </list>
+    </field>
+    <field name="model">x_proposal_tag</field>
+    <field name="name">Default list view for x_proposal_tag</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_72c3af9c-beb5-4b2f-9060-8cfc59fe0e0b" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="Proposal Tags">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_f40841">
+            <group name="studio_group_f40841_left"/>
+            <group name="studio_group_f40841_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="model">x_proposal_tag</field>
+    <field name="name">Default form view for x_proposal_tag</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__993cd93f-8ab9-4135-ba4e-adfda47965a2" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+      </search>
+    </field>
+    <field name="model">x_proposal_tag</field>
+    <field name="name">Default search view for x_proposal_tag</field>
+    <field name="type">search</field>
+  </record>
+  <record id="odoo_studio_default__7c710d44-d7a1-4f07-ad7a-bf6034a9c67c" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_studio_stage_id']" position="attributes">
+          <attribute name="required">True</attribute>
+          <attribute name="string">Status</attribute>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]/div[1]/h1[1]/field[@name='x_name']" position="attributes">
+          <attribute name="string">Name</attribute>
+        </xpath>
+        <xpath expr="//field[@name='x_proposal_line_ids_baf3b']" position="inside">
+          <list editable="bottom">
+            <field name="x_studio_sequence" widget="handle"/>
+            <field name="x_name" string="Name"/>
+          </list>
+        </xpath>
+      </data>
+    </field>
+    <field name="inherit_id" ref="default_form_view_fo_c8bb0797-259e-4ad6-823d-7b82824c7a56"/>
+    <field name="mode">extension</field>
+    <field name="model">x_proposal</field>
+    <field name="name">Odoo Studio: Default form view for x_proposal customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record id="odoo_studio_default__568e812b-0aaa-48a8-95c0-1d6cf4e6ce34" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="attributes">
+          <attribute name="string">Status</attribute>
+        </xpath>
+      </data>
+    </field>
+    <field name="inherit_id" ref="default_list_view_fo_33a136e2-af97-4543-8f12-38e416e17d2b"/>
+    <field name="mode">extension</field>
+    <field name="model">x_proposal_stage</field>
+    <field name="name">Odoo Studio: Default list view for x_proposal_stage customization</field>
+    <field name="priority">99</field>
+    <field name="type">list</field>
+  </record>
+  <record id="odoo_studio_default__ea46816c-e45e-45ce-afcb-4b7810d28498" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_studio_partner_id']" position="attributes">
+          <attribute name="string">Client</attribute>
+        </xpath>
+      </data>
+    </field>
+    <field name="inherit_id" ref="default_list_view_fo_ebe1f7ea-d0aa-4488-9271-4976db33b779"/>
+    <field name="mode">extension</field>
+    <field name="model">x_proposal</field>
+    <field name="name">Odoo Studio: Default list view for x_proposal customization</field>
+    <field name="priority">99</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_list_view_fo_c5d2b1a1-e22b-4143-ac1d-712f837aa211" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list>
+        <field name="x_studio_sequence" widget="handle"/>
+        <field name="x_name"/>
+      </list>
+    </field>
+    <field name="model">x_proposal_task</field>
+    <field name="name">Default list view for x_proposal_task</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_f2978676-97e0-4e16-8a7d-97046fbcd0e5" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="Proposal Task">
+          <widget name="web_ribbon" text="Archived" bg_color="text-bg-danger" invisible="x_active"/>
+          <field name="x_active" invisible="1"/>
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_313331">
+            <group name="studio_group_313331_left">
+              <field name="x_studio_date"/>
+              <field name="x_studio_date_start" string="Dates" widget="daterange" options="{'end_date_field': 'x_studio_date_stop'}"/>
+              <field name="x_studio_date_stop" invisible="1"/>
+            </group>
+            <group name="studio_group_313331_right"/>
+          </group>
+          <notebook>
+            <page string="Details" name="lines">
+              <field name="x_proposal_task_line_ids_65eac"/>
+            </page>
+          </notebook>
+        </sheet>
+        <chatter/>
+      </form>
+    </field>
+    <field name="model">x_proposal_task</field>
+    <field name="name">Default form view for x_proposal_task</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__925f09f9-ee1d-42cc-8443-e7e78f001853" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+        <separator/>
+        <filter date="x_studio_date" name="studio_filter_date" string="Date"/>
+        <filter date="x_studio_date_start" name="studio_filter_date_start" string="Start Date"/>
+        <filter date="x_studio_date_stop" name="studio_filter_date_stop" string="End Date"/>
+        <separator/>
+        <filter string="Archived" name="archived_x_proposal_task" domain="[['x_active', '=', False]]"/>
+        <separator/>
+      </search>
+    </field>
+    <field name="model">x_proposal_task</field>
+    <field name="name">Default search view for x_proposal_task</field>
+    <field name="type">search</field>
+  </record>
+  <record id="default_calendar_vie_2dbbf81e-066c-4eaa-8094-2861a2141c77" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <calendar date_start="x_studio_date" create_name_field="x_name"/>
+    </field>
+    <field name="model">x_proposal_task</field>
+    <field name="name">Default calendar view for x_proposal_task</field>
+    <field name="type">calendar</field>
+  </record>
+  <record id="default_gantt_view_f_8a018636-971e-45e8-98b1-dbca2dfdbe1c" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <gantt date_start="x_studio_date_start" date_stop="x_studio_date_stop"/>
+    </field>
+    <field name="model">x_proposal_task</field>
+    <field name="name">Default gantt view for x_proposal_task</field>
+    <field name="type">gantt</field>
+  </record>
+  <record id="default_list_view_fo_6126ce79-d7d0-4d30-a897-4795882be5e1" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list editable="bottom">
+        <field name="x_studio_sequence" widget="handle"/>
+        <field name="x_name"/>
+      </list>
+    </field>
+    <field name="model">x_proposal_task_line_463a0</field>
+    <field name="name">Default list view for x_proposal_task_line_463a0</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_6bb222c8-1bc5-4aae-a8ec-3e32ecb947e1" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="proposal_task_line">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_252252">
+            <group name="studio_group_252252_left"/>
+            <group name="studio_group_252252_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="model">x_proposal_task_line_463a0</field>
+    <field name="name">Default form view for x_proposal_task_line_463a0</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__5528c50b-6d1b-4239-9b44-619fa46d12a7" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+      </search>
+    </field>
+    <field name="model">x_proposal_task_line_463a0</field>
+    <field name="name">Default search view for x_proposal_task_line_463a0</field>
+    <field name="type">search</field>
+  </record>
+</odoo>

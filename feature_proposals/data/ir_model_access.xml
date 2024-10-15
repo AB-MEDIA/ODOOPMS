@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="professional_categor_e8fc93e3-29c3-484b-ac02-d3b3c6559967" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="professional_categor_d1892d1f-8c9a-4570-9654-20340c045ef2"/>
+    <field name="name">Professional Category group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="professional_categor_be7c9edb-8bbe-4b15-8f11-adddd2bed45d" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="professional_categor_d1892d1f-8c9a-4570-9654-20340c045ef2"/>
+    <field name="name">Professional Category group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="professional_categor_8c8321aa-de5a-4b84-9f0a-6e48893e7d79" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="professional_categor_6488eeac-4ce5-4abb-b453-2d8d9f754aca"/>
+    <field name="name">professional_categor_line group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="professional_categor_3a98455d-6630-4de8-8a33-09a833c6aa40" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="professional_categor_6488eeac-4ce5-4abb-b453-2d8d9f754aca"/>
+    <field name="name">professional_categor_line group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="discipline_group_sys_5ef8123a-107a-4c43-ab1f-b1b71e3c77d3" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="discipline_3d557a7f-88a7-4eb8-9df3-ce78933730a1"/>
+    <field name="name">Discipline group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="discipline_group_use_f7dbad33-855c-4b9b-bbcf-7ce5b561c979" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="discipline_3d557a7f-88a7-4eb8-9df3-ce78933730a1"/>
+    <field name="name">Discipline group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_group_syste_eefc847f-aefb-4936-80c4-f7f14bcc1bb8" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">Proposal group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_group_user_de63751e-2936-44e9-9ec4-17a470043a84" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">Proposal group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_line_group__c27860f6-a411-49fc-aa22-835f4553f2fc" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="proposal_line_3d698093-9ae7-4df4-b6bc-21c82be8a312"/>
+    <field name="name">proposal_line group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_line_group__0b610188-7198-4388-a0b4-5e34d6a312e6" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="proposal_line_3d698093-9ae7-4df4-b6bc-21c82be8a312"/>
+    <field name="name">proposal_line group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_stages_grou_86929d5e-2f39-4224-a3a3-d07d2629541c" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="proposal_stages_fa6e859c-37c1-439e-8294-ef6e8325c7f7"/>
+    <field name="name">Proposal Stages group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_stages_grou_173faa8c-d0f4-4fab-8228-cc5dadcad7fb" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="proposal_stages_fa6e859c-37c1-439e-8294-ef6e8325c7f7"/>
+    <field name="name">Proposal Stages group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_tags_group__a6b44bf3-2326-470b-9d87-b5a118dbd892" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="proposal_tags_1fc443eb-e981-4cf7-b59d-0d5209581cb1"/>
+    <field name="name">Proposal Tags group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_tags_group__0018fdd6-3d0b-4964-8615-c40c814f64fa" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="proposal_tags_1fc443eb-e981-4cf7-b59d-0d5209581cb1"/>
+    <field name="name">Proposal Tags group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_task_group__dca52c1e-c7a9-45ad-b259-719fe836febb" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="proposal_task_1b0c3025-f492-4077-b617-3bec9e95a346"/>
+    <field name="name">Proposal Task group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_task_group__1f3bef91-248b-4bad-b3b5-ef66d0684031" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="proposal_task_1b0c3025-f492-4077-b617-3bec9e95a346"/>
+    <field name="name">Proposal Task group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_task_line_g_e67ca347-1121-42d4-a943-543bba02a675" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="proposal_task_line_9d427f19-5c74-4667-ac71-afcb344b0f94"/>
+    <field name="name">proposal_task_line group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="proposal_task_line_g_be82b019-58ec-43e8-a03b-19bbe9114fc6" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="proposal_task_line_9d427f19-5c74-4667-ac71-afcb344b0f94"/>
+    <field name="name">proposal_task_line group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+</odoo>

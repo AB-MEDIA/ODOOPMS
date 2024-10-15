@@ -1,0 +1,514 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="description_professi_24f7408c-c53f-498d-98a0-13e39476de77" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Name</field>
+    <field name="model">x_professional_categor</field>
+    <field name="model_id" ref="professional_categor_d1892d1f-8c9a-4570-9654-20340c045ef2"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="required" eval="True"/>
+    <field name="tracking">1</field>
+    <field name="translate" eval="True"/>
+  </record>
+  <record id="active_professional__1e419b07-7e75-492b-87bc-edbb07c63989" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">boolean</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Active</field>
+    <field name="model">x_professional_categor</field>
+    <field name="model_id" ref="professional_categor_d1892d1f-8c9a-4570-9654-20340c045ef2"/>
+    <field name="name">x_active</field>
+    <field name="on_delete" eval="False"/>
+    <field name="tracking">1</field>
+  </record>
+  <record id="sequence_professiona_19fe6981-3479-4d7c-8716-5532634df616" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">integer</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Sequence</field>
+    <field name="model">x_professional_categor</field>
+    <field name="model_id" ref="professional_categor_d1892d1f-8c9a-4570-9654-20340c045ef2"/>
+    <field name="name">x_studio_sequence</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="professional_categor_1429ea03-01a6-48fa-a794-ab1ea238f43d" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">many2one</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">X Professional Categor</field>
+    <field name="model">x_professional_categor_line_c835d</field>
+    <field name="model_id" ref="professional_categor_6488eeac-4ce5-4abb-b453-2d8d9f754aca"/>
+    <field name="name">x_professional_categor_id</field>
+    <field name="relation">x_professional_categor</field>
+  </record>
+  <record id="new_lines_profession_9e2f9ab9-167c-4651-9965-bf814ed7e27d" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">one2many</field>
+    <field name="field_description">New Lines</field>
+    <field name="model">x_professional_categor</field>
+    <field name="model_id" ref="professional_categor_d1892d1f-8c9a-4570-9654-20340c045ef2"/>
+    <field name="name">x_professional_categor_line_ids_bb29d</field>
+    <field name="on_delete" eval="False"/>
+    <field name="relation">x_professional_categor_line_c835d</field>
+    <field name="relation_field">x_professional_categor_id</field>
+  </record>
+  <record id="sequence_professiona_fcbd36fd-dab5-46c1-82ea-3814a6fa0b80" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">integer</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Sequence</field>
+    <field name="model">x_professional_categor_line_c835d</field>
+    <field name="model_id" ref="professional_categor_6488eeac-4ce5-4abb-b453-2d8d9f754aca"/>
+    <field name="name">x_studio_sequence</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="description_professi_a47a10c7-dd77-4adb-9aa4-2989440eb0d1" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Description</field>
+    <field name="model">x_professional_categor_line_c835d</field>
+    <field name="model_id" ref="professional_categor_6488eeac-4ce5-4abb-b453-2d8d9f754aca"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="required" eval="True"/>
+    <field name="translate" eval="True"/>
+  </record>
+  <record id="new_text_professiona_11838536-8e66-4d9a-93c0-acf3a2bfc65e" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Name</field>
+    <field name="model">x_professional_categor</field>
+    <field name="model_id" ref="professional_categor_d1892d1f-8c9a-4570-9654-20340c045ef2"/>
+    <field name="name">x_studio_name</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="new_text_professiona_7b12f11c-76dc-4260-8cae-a41cef4fdcae" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Code</field>
+    <field name="model">x_professional_categor</field>
+    <field name="model_id" ref="professional_categor_d1892d1f-8c9a-4570-9654-20340c045ef2"/>
+    <field name="name">x_studio_code</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="new_multine_text_pro_57d7a699-646b-411f-9106-e640a962e613" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">text</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Description</field>
+    <field name="model">x_professional_categor</field>
+    <field name="model_id" ref="professional_categor_d1892d1f-8c9a-4570-9654-20340c045ef2"/>
+    <field name="name">x_studio_text_field_1ek_1ia0b6l94</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="description_discipli_65500ac2-53d3-4489-b461-e2b818df2309" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Name</field>
+    <field name="model">x_discipline</field>
+    <field name="model_id" ref="discipline_3d557a7f-88a7-4eb8-9df3-ce78933730a1"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="required" eval="True"/>
+    <field name="tracking">1</field>
+    <field name="translate" eval="True"/>
+  </record>
+  <record id="active_discipline_b4678521-a50e-4b1d-a7c7-1c29fd5a2cb6" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">boolean</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Active</field>
+    <field name="model">x_discipline</field>
+    <field name="model_id" ref="discipline_3d557a7f-88a7-4eb8-9df3-ce78933730a1"/>
+    <field name="name">x_active</field>
+    <field name="on_delete" eval="False"/>
+    <field name="tracking">1</field>
+  </record>
+  <record id="sequence_discipline_f4eaaa33-0944-4cce-ba42-36b7d7165309" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">integer</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Sequence</field>
+    <field name="model">x_discipline</field>
+    <field name="model_id" ref="discipline_3d557a7f-88a7-4eb8-9df3-ce78933730a1"/>
+    <field name="name">x_studio_sequence</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="new_text_discipline_4165423a-d6ba-4f20-ab57-3a10d3e5cdbf" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Code</field>
+    <field name="model">x_discipline</field>
+    <field name="model_id" ref="discipline_3d557a7f-88a7-4eb8-9df3-ce78933730a1"/>
+    <field name="name">x_studio_discipline_code</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="new_multine_text_dis_cfec20bf-fb0c-4617-85b9-9019a2f58dd4" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">text</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Description</field>
+    <field name="model">x_discipline</field>
+    <field name="model_id" ref="discipline_3d557a7f-88a7-4eb8-9df3-ce78933730a1"/>
+    <field name="name">x_studio_text_field</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="new_multine_text_dis_a90b4e74-72c3-4460-909b-5be7beaca709" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">text</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Description</field>
+    <field name="model">x_discipline</field>
+    <field name="model_id" ref="discipline_3d557a7f-88a7-4eb8-9df3-ce78933730a1"/>
+    <field name="name">x_studio_description</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="description_proposal_dbd16142-23b5-4c0f-bb21-feeb2ebe855a" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Name</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="required" eval="True"/>
+    <field name="tracking">1</field>
+    <field name="translate" eval="True"/>
+  </record>
+  <record id="active_proposal_9bbdde2c-1cb3-400c-919b-0da528cae25d" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">boolean</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Active</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_active</field>
+    <field name="on_delete" eval="False"/>
+    <field name="tracking">1</field>
+  </record>
+  <record id="responsible_proposal_ff2756df-c982-428b-89fc-f3e3ad68b7cd" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">many2one</field>
+    <field name="copied" eval="True"/>
+    <field name="domain">[('share', '=', False)]</field>
+    <field name="field_description">Responsible</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_user_id</field>
+    <field name="relation">res.users</field>
+    <field name="tracking">1</field>
+  </record>
+  <record id="contact_proposal_a454f779-364d-4566-807a-5fc8658d62f1" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">many2one</field>
+    <field name="copied" eval="True"/>
+    <field name="domain">[('customer_rank', '&gt;', 0)]</field>
+    <field name="field_description">Client</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_partner_id</field>
+    <field name="relation">res.partner</field>
+    <field name="tracking">1</field>
+  </record>
+  <record id="phone_proposal_3411d8d8-b998-4d6d-8a0d-cf18effc2563" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="related">x_studio_partner_id.phone</field>
+    <field name="field_description">Phone</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_partner_phone</field>
+    <field name="on_delete" eval="False"/>
+    <field name="tracking">2</field>
+  </record>
+  <record id="email_proposal_b82a8a7f-c272-49c2-bbaa-7271ea6012fd" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="related">x_studio_partner_id.email</field>
+    <field name="field_description">Email</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_partner_email</field>
+    <field name="on_delete" eval="False"/>
+    <field name="tracking">1</field>
+  </record>
+  <record id="notes_proposal_9e5b44c5-1ca4-4dec-8c83-4fb182f86591" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">html</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Notes</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_notes</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="date_proposal_c9f5fc48-844f-4f74-8d70-56baba5c1e9d" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">date</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Date</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_date</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="end_date_proposal_ec828283-bf31-4db0-9924-734064aff95f" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">datetime</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">End Date</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_date_stop</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="start_date_proposal_08781efd-4de0-4f3b-8624-71a53a62d7ec" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">datetime</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Start Date</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_date_start</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="currency_proposal_84c7b991-68d5-49da-800c-1837859e5701" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">many2one</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Currency</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_currency_id</field>
+    <field name="relation">res.currency</field>
+  </record>
+  <record id="value_proposal_d3deb7cc-11a4-4a71-a157-da94c7089e15" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">monetary</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Value</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_value</field>
+    <field name="on_delete" eval="False"/>
+    <field name="tracking">1</field>
+    <field name="currency_field">x_studio_currency_id</field>
+  </record>
+  <record id="sequence_proposal_a76e2294-6c3c-4cba-9679-6d2e3925ca75" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">integer</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Sequence</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_sequence</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="proposal_line_b48069d3-280a-4646-aa97-93189a520050" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">many2one</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">X Proposal</field>
+    <field name="model">x_proposal_line_555c2</field>
+    <field name="model_id" ref="proposal_line_3d698093-9ae7-4df4-b6bc-21c82be8a312"/>
+    <field name="name">x_proposal_id</field>
+    <field name="relation">x_proposal</field>
+  </record>
+  <record id="new_lines_proposal_8c2dbc2a-4fca-445a-b99d-6b51d619ef5c" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">one2many</field>
+    <field name="field_description">New Lines</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_proposal_line_ids_baf3b</field>
+    <field name="on_delete" eval="False"/>
+    <field name="relation">x_proposal_line_555c2</field>
+    <field name="relation_field">x_proposal_id</field>
+  </record>
+  <record id="stage_proposal_96682f4d-34d9-4094-abec-20dbd44d381f" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">many2one</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Status</field>
+    <field name="group_expand" eval="True"/>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_stage_id</field>
+    <field name="on_delete">restrict</field>
+    <field name="relation">x_proposal_stage</field>
+    <field name="required" eval="True"/>
+    <field name="tracking">1</field>
+  </record>
+  <record id="high_priority_propos_713c81b1-e5ad-4ebb-aa69-b3fb6ab74be1" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">boolean</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">High Priority</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_priority</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="color_proposal_ece7a74c-7fc2-44d8-8ce1-e03ffcf55004" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">integer</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Color</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_color</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="kanban_state_proposa_d7684531-f3e3-491c-bfcf-0244f25f81b5" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">selection</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Kanban State</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_kanban_state</field>
+    <field name="on_delete" eval="False"/>
+    <field name="selection">[('normal', 'In Progress'), ('done', 'Ready'), ('blocked', 'Blocked')]</field>
+  </record>
+  <record id="tags_proposal_cb9789ca-76da-462d-8675-5ce0ef43f8c7" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">many2many</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Tags</field>
+    <field name="model">x_proposal</field>
+    <field name="model_id" ref="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd"/>
+    <field name="name">x_studio_tag_ids</field>
+    <field name="on_delete" eval="False"/>
+    <field name="relation">x_proposal_tag</field>
+    <field name="relation_table">x_proposal_tag_rel</field>
+  </record>
+  <record id="sequence_proposal_li_c016fffe-6625-4730-b208-701a832d8125" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">integer</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Sequence</field>
+    <field name="model">x_proposal_line_555c2</field>
+    <field name="model_id" ref="proposal_line_3d698093-9ae7-4df4-b6bc-21c82be8a312"/>
+    <field name="name">x_studio_sequence</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="description_proposal_d095c047-6d82-47ee-afcd-9f9dc9222f66" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Name</field>
+    <field name="model">x_proposal_line_555c2</field>
+    <field name="model_id" ref="proposal_line_3d698093-9ae7-4df4-b6bc-21c82be8a312"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="required" eval="True"/>
+    <field name="translate" eval="True"/>
+  </record>
+  <record id="stage_name_proposal__f5cf8544-f982-40cf-bfaf-afb8a410f701" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Status</field>
+    <field name="model">x_proposal_stage</field>
+    <field name="model_id" ref="proposal_stages_fa6e859c-37c1-439e-8294-ef6e8325c7f7"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="required" eval="True"/>
+    <field name="translate" eval="True"/>
+  </record>
+  <record id="sequence_proposal_st_4e9e17de-4011-442f-8e14-858c457398b3" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">integer</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Sequence</field>
+    <field name="model">x_proposal_stage</field>
+    <field name="model_id" ref="proposal_stages_fa6e859c-37c1-439e-8294-ef6e8325c7f7"/>
+    <field name="name">x_studio_sequence</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="name_proposal_tags_5a7dd517-be8e-40f8-bb74-7929c38d9100" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Name</field>
+    <field name="model">x_proposal_tag</field>
+    <field name="model_id" ref="proposal_tags_1fc443eb-e981-4cf7-b59d-0d5209581cb1"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="required" eval="True"/>
+  </record>
+  <record id="color_proposal_tags_7b283a91-b1ff-4f42-a83c-85b06384a42f" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">integer</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Color</field>
+    <field name="model">x_proposal_tag</field>
+    <field name="model_id" ref="proposal_tags_1fc443eb-e981-4cf7-b59d-0d5209581cb1"/>
+    <field name="name">x_color</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="description_proposal_7215624f-daba-4459-b11d-b2fb7675f4ae" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Description</field>
+    <field name="model">x_proposal_task</field>
+    <field name="model_id" ref="proposal_task_1b0c3025-f492-4077-b617-3bec9e95a346"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="required" eval="True"/>
+    <field name="tracking">1</field>
+    <field name="translate" eval="True"/>
+  </record>
+  <record id="active_proposal_task_66956cf0-de9b-4021-868c-33bff3d75b5a" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">boolean</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Active</field>
+    <field name="model">x_proposal_task</field>
+    <field name="model_id" ref="proposal_task_1b0c3025-f492-4077-b617-3bec9e95a346"/>
+    <field name="name">x_active</field>
+    <field name="on_delete" eval="False"/>
+    <field name="tracking">1</field>
+  </record>
+  <record id="date_proposal_task_81cfae2c-e7fe-4ef5-9424-5a4b110234d7" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">date</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Date</field>
+    <field name="model">x_proposal_task</field>
+    <field name="model_id" ref="proposal_task_1b0c3025-f492-4077-b617-3bec9e95a346"/>
+    <field name="name">x_studio_date</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="end_date_proposal_ta_405a2cb4-11c2-4054-aba7-c0411d4ef1bb" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">datetime</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">End Date</field>
+    <field name="model">x_proposal_task</field>
+    <field name="model_id" ref="proposal_task_1b0c3025-f492-4077-b617-3bec9e95a346"/>
+    <field name="name">x_studio_date_stop</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="start_date_proposal__320fbb7a-3e12-4662-9e32-3baa065b6170" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">datetime</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Start Date</field>
+    <field name="model">x_proposal_task</field>
+    <field name="model_id" ref="proposal_task_1b0c3025-f492-4077-b617-3bec9e95a346"/>
+    <field name="name">x_studio_date_start</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="sequence_proposal_ta_11906efb-84cc-4882-94d7-0a6d8fcc351d" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">integer</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Sequence</field>
+    <field name="model">x_proposal_task</field>
+    <field name="model_id" ref="proposal_task_1b0c3025-f492-4077-b617-3bec9e95a346"/>
+    <field name="name">x_studio_sequence</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="proposal_task_line_e1452688-adee-4617-8f93-c718b91c082d" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">many2one</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">X Proposal Task</field>
+    <field name="model">x_proposal_task_line_463a0</field>
+    <field name="model_id" ref="proposal_task_line_9d427f19-5c74-4667-ac71-afcb344b0f94"/>
+    <field name="name">x_proposal_task_id</field>
+    <field name="relation">x_proposal_task</field>
+  </record>
+  <record id="new_lines_proposal_t_4e69a750-2c9c-4104-bdf6-2a21b728995f" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">one2many</field>
+    <field name="field_description">New Lines</field>
+    <field name="model">x_proposal_task</field>
+    <field name="model_id" ref="proposal_task_1b0c3025-f492-4077-b617-3bec9e95a346"/>
+    <field name="name">x_proposal_task_line_ids_65eac</field>
+    <field name="on_delete" eval="False"/>
+    <field name="relation">x_proposal_task_line_463a0</field>
+    <field name="relation_field">x_proposal_task_id</field>
+  </record>
+  <record id="sequence_proposal_ta_068c778e-5637-4895-9932-3cffd95b2239" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">integer</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Sequence</field>
+    <field name="model">x_proposal_task_line_463a0</field>
+    <field name="model_id" ref="proposal_task_line_9d427f19-5c74-4667-ac71-afcb344b0f94"/>
+    <field name="name">x_studio_sequence</field>
+    <field name="on_delete" eval="False"/>
+  </record>
+  <record id="description_proposal_b77c712f-39a4-4866-81b9-e82ba5373782" model="ir.model.fields" context="{'studio': True}">
+    <field name="ttype">char</field>
+    <field name="copied" eval="True"/>
+    <field name="field_description">Description</field>
+    <field name="model">x_proposal_task_line_463a0</field>
+    <field name="model_id" ref="proposal_task_line_9d427f19-5c74-4667-ac71-afcb344b0f94"/>
+    <field name="name">x_name</field>
+    <field name="on_delete" eval="False"/>
+    <field name="required" eval="True"/>
+    <field name="translate" eval="True"/>
+  </record>
+</odoo>

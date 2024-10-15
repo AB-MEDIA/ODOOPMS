@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="proposals_441f765c-5272-4282-a095-e69024a9fd83" model="ir.ui.menu" context="{'studio': True}">
+    <field name="name">Proposals</field>
+    <field name="web_icon">fa fa-paste,#FFFFFF,#34495e</field>
+  </record>
+  <record id="proposals_proposals_20942ff9-e2d4-4480-9fd5-79c64780720f" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="proposals_769438a0-4040-438d-8873-8229a3242d3d"/>
+    <field name="active" eval="False"/>
+    <field name="name">Proposals</field>
+    <field name="parent_id" ref="proposals_441f765c-5272-4282-a095-e69024a9fd83"/>
+  </record>
+  <record id="proposals_profession_c822acde-723d-4163-91f7-26ada71d494d" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="professional_categor_db5da424-f8fe-4103-9c9b-43808c41c9ae"/>
+    <field name="name">Professional Category</field>
+    <field name="parent_id" ref="proposals_441f765c-5272-4282-a095-e69024a9fd83"/>
+    <field name="sequence">11</field>
+  </record>
+  <record id="proposals_discipline_b88e3033-9d18-41d1-9891-bb89b7a78c0a" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="discipline_ee7afc06-78be-4cec-a170-32b749b26ef9"/>
+    <field name="name">Discipline</field>
+    <field name="parent_id" ref="proposals_441f765c-5272-4282-a095-e69024a9fd83"/>
+    <field name="sequence">12</field>
+  </record>
+  <record id="proposals_proposal_8b4acfec-30f7-42ca-84fe-b10898065910" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="proposal_5e3b9ca8-e6c3-4d7a-9f59-d03350004177"/>
+    <field name="name">Proposal</field>
+    <field name="parent_id" ref="proposals_441f765c-5272-4282-a095-e69024a9fd83"/>
+    <field name="sequence">13</field>
+  </record>
+  <record id="proposals_configurat_82104a31-411e-4efd-a110-0975f125d7f1" model="ir.ui.menu" context="{'studio': True}">
+    <field name="name">Configuration</field>
+    <field name="parent_id" ref="proposals_441f765c-5272-4282-a095-e69024a9fd83"/>
+    <field name="sequence">1000</field>
+  </record>
+  <record id="proposals_configurat_f73b25cc-fc4b-4d0a-a0df-86d67adc2b60" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="proposal_stages_4ff28656-22ca-4ecb-a742-ff4b0b3dec25"/>
+    <field name="name">Proposal Stages</field>
+    <field name="parent_id" ref="proposals_configurat_82104a31-411e-4efd-a110-0975f125d7f1"/>
+  </record>
+  <record id="proposals_configurat_7dd6b3ec-1bce-4150-9be5-e5b85e01b7f0" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="proposal_tags_64a76878-ffc8-4757-89d8-3d1ee44d3012"/>
+    <field name="name">Proposal Tags</field>
+    <field name="parent_id" ref="proposals_configurat_82104a31-411e-4efd-a110-0975f125d7f1"/>
+  </record>
+  <record id="proposals_proposal_t_fe095cdb-0f9a-4dec-8aae-d12172b31ff5" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="proposal_task_05ff1be8-41a0-4088-97d7-4851cd0263a2"/>
+    <field name="name">Proposal Task</field>
+    <field name="parent_id" ref="proposals_441f765c-5272-4282-a095-e69024a9fd83"/>
+    <field name="sequence">1001</field>
+  </record>
+</odoo>

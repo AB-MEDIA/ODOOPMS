@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="active_professional__7e1caef1-c7bb-4fb1-8362-efdc2f9bdb0b" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="active_professional__1e419b07-7e75-492b-87bc-edbb07c63989"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="sequence_professiona_37845ba4-fd94-4096-8d3f-b4244dffb3a4" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="sequence_professiona_19fe6981-3479-4d7c-8716-5532634df616"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="active_discipline_393a52e1-ec4f-4b76-8f70-f3a147f666a2" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="active_discipline_b4678521-a50e-4b1d-a7c7-1c29fd5a2cb6"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="sequence_discipline_9a84dcda-c078-4b0e-b6ed-5c91b6ff8a99" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="sequence_discipline_f4eaaa33-0944-4cce-ba42-36b7d7165309"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="active_proposal_6664f3ec-08bf-4db2-8844-cf4cdf0001d9" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="active_proposal_9bbdde2c-1cb3-400c-919b-0da528cae25d"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="currency_proposal_8db035ec-0690-47ba-8e8e-0a04bb639e7d" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="currency_proposal_84c7b991-68d5-49da-800c-1837859e5701"/>
+    <field name="json_value">1</field>
+  </record>
+  <record id="sequence_proposal_2dfb791f-6df3-4550-86f3-a8d5a4447478" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="sequence_proposal_a76e2294-6c3c-4cba-9679-6d2e3925ca75"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="stage_proposal_8a83482a-3b8c-45a1-89b8-ca6dc28ea232" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="stage_proposal_96682f4d-34d9-4094-abec-20dbd44d381f"/>
+    <field name="json_value">1</field>
+  </record>
+  <record id="active_proposal_task_f98352ab-b91d-4d42-8082-fa4b749beee4" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="active_proposal_task_66956cf0-de9b-4021-868c-33bff3d75b5a"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="sequence_proposal_ta_3f9b2a69-fbd3-476a-982c-809944ff4b74" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="sequence_proposal_ta_11906efb-84cc-4882-94d7-0a6d8fcc351d"/>
+    <field name="json_value">10</field>
+  </record>
+</odoo>

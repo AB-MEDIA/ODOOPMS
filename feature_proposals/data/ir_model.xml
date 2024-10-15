@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="professional_categor_d1892d1f-8c9a-4570-9654-20340c045ef2" model="ir.model" context="{'studio': True}">
+    <field name="info"><![CDATA[ Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    ]]></field>
+    <field name="is_mail_thread" eval="True"/>
+    <field name="is_mail_activity" eval="True"/>
+    <field name="model">x_professional_categor</field>
+    <field name="name">Professional Category</field>
+  </record>
+  <record id="professional_categor_6488eeac-4ce5-4abb-b453-2d8d9f754aca" model="ir.model" context="{'studio': True}">
+    <field name="info"><![CDATA[ Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    ]]></field>
+    <field name="model">x_professional_categor_line_c835d</field>
+    <field name="name">professional_categor_line</field>
+  </record>
+  <record id="discipline_3d557a7f-88a7-4eb8-9df3-ce78933730a1" model="ir.model" context="{'studio': True}">
+    <field name="info"><![CDATA[ Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    ]]></field>
+    <field name="is_mail_thread" eval="True"/>
+    <field name="is_mail_activity" eval="True"/>
+    <field name="model">x_discipline</field>
+    <field name="name">Discipline</field>
+  </record>
+  <record id="proposal_e7203f7a-7f8b-4348-82c8-e5f0d2df8bcd" model="ir.model" context="{'studio': True}">
+    <field name="info"><![CDATA[ Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    ]]></field>
+    <field name="is_mail_thread" eval="True"/>
+    <field name="is_mail_activity" eval="True"/>
+    <field name="model">x_proposal</field>
+    <field name="name">Proposal</field>
+  </record>
+  <record id="proposal_line_3d698093-9ae7-4df4-b6bc-21c82be8a312" model="ir.model" context="{'studio': True}">
+    <field name="info"><![CDATA[ Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    ]]></field>
+    <field name="model">x_proposal_line_555c2</field>
+    <field name="name">proposal_line</field>
+  </record>
+  <record id="proposal_stages_fa6e859c-37c1-439e-8294-ef6e8325c7f7" model="ir.model" context="{'studio': True}">
+    <field name="info"><![CDATA[ Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    ]]></field>
+    <field name="model">x_proposal_stage</field>
+    <field name="name">Proposal Stages</field>
+  </record>
+  <record id="proposal_tags_1fc443eb-e981-4cf7-b59d-0d5209581cb1" model="ir.model" context="{'studio': True}">
+    <field name="info"><![CDATA[ Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    ]]></field>
+    <field name="model">x_proposal_tag</field>
+    <field name="name">Proposal Tags</field>
+  </record>
+  <record id="proposal_task_1b0c3025-f492-4077-b617-3bec9e95a346" model="ir.model" context="{'studio': True}">
+    <field name="info"><![CDATA[ Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    ]]></field>
+    <field name="is_mail_thread" eval="True"/>
+    <field name="is_mail_activity" eval="True"/>
+    <field name="model">x_proposal_task</field>
+    <field name="name">Proposal Task</field>
+  </record>
+  <record id="proposal_task_line_9d427f19-5c74-4667-ac71-afcb344b0f94" model="ir.model" context="{'studio': True}">
+    <field name="info"><![CDATA[ Main super-class for regular database-persisted Odoo models.
+
+    Odoo models are created by inheriting from this class::
+
+        class user(Model):
+            ...
+
+    The system will later instantiate the class once per database (on
+    which the class' module is installed).
+    ]]></field>
+    <field name="model">x_proposal_task_line_463a0</field>
+    <field name="name">proposal_task_line</field>
+  </record>
+</odoo>
