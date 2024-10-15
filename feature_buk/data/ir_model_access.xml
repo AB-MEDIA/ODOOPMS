@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="itasca_group_system_36def94e-e38e-4a67-aed9-962bec685b65" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="itasca_02f24423-dd3e-4723-b450-ca59a3c73496"/>
+    <field name="name">ITASCA group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="itasca_group_user_e4defae8-cb2f-4f06-8cdc-15cee3374ec4" model="ir.model.access" context="{'studio': True}">
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="itasca_02f24423-dd3e-4723-b450-ca59a3c73496"/>
+    <field name="name">ITASCA group_user</field>
+  </record>
+</odoo>

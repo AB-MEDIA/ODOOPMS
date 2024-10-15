@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="default_list_view_fo_dddf630b-31e8-4442-8c0b-544ac14beec3" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <list>
+        <field name="x_name"/>
+      </list>
+    </field>
+    <field name="model">x_itasca</field>
+    <field name="name">Default list view for x_itasca</field>
+    <field name="type">list</field>
+  </record>
+  <record id="default_form_view_fo_f8a087c4-ec64-4b11-ba5f-d8ed8302bdab" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <form>
+        <header/>
+        <sheet string="ITASCA">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1" placeholder="Name..."/>
+            </h1>
+          </div>
+          <group name="studio_group_b881e4">
+            <group name="studio_group_b881e4_left"/>
+            <group name="studio_group_b881e4_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field name="model">x_itasca</field>
+    <field name="name">Default form view for x_itasca</field>
+    <field name="type">form</field>
+  </record>
+  <record id="default_search_view__9f40adc0-0b74-4c9c-b698-0595b3684ee5" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="False"/>
+    <field name="arch" type="xml">
+      <search>
+        <field name="x_name"/>
+      </search>
+    </field>
+    <field name="model">x_itasca</field>
+    <field name="name">Default search view for x_itasca</field>
+    <field name="type">search</field>
+  </record>
+  <record id="odoo_studio_default__76cc3ac3-d2d7-4fd0-be49-1bb7fde0f61f" model="ir.ui.view" context="{'studio': True}">
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="before">
+          <header>
+            <button string="Importar desde BUK" name="264" type="action"/>
+          </header>
+        </xpath>
+      </data>
+    </field>
+    <field name="inherit_id" ref="default_list_view_fo_dddf630b-31e8-4442-8c0b-544ac14beec3"/>
+    <field name="mode">extension</field>
+    <field name="model">x_itasca</field>
+    <field name="name">Odoo Studio: Default list view for x_itasca customization</field>
+    <field name="priority">99</field>
+    <field name="type">list</field>
+  </record>
+</odoo>
